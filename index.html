@@ -92,7 +92,7 @@
 <body>
     <div id="chatContainer">
         <ul id="chatMessages">
-            <!-- Messages will be appended here -->
+           
         </ul>
     </div>
     <div id="messageInputContainer">
@@ -109,7 +109,7 @@
 
         socket.on('message', (message) => {
             appendMessage(message);
-            // Automatically scroll to the bottom
+            
             chatMessages.scrollTop = chatMessages.scrollHeight;
         });
 
